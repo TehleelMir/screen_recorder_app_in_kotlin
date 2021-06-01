@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">screen recorind app in Kotlin</string>
+    <string name="app_name">Eye</string>
+
+    <string name="developer">Developer</string>
+    <string name="insta"><a href="https://www.instagram.com/tehleel.mir/">Instagram</a></string>
+    <string name="twitter"><a href="https://twitter.com/tehleelmir64">Twitter</a></string>
+    <string name="reddit"><a href="https://www.reddit.com/user/tehleel_mir_official">Reddit</a></string>
+    <string name="mail">tehleelmir64@gmail.com</string>
+    <string name="icon_link">Icons from<a href="https://www.freepik.com"> www.freepik.com </a> </string>
 </resources>

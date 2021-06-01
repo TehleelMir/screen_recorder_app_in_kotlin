@@ -1,9 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    android:background="#E0E0E0"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#E0E0E0"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        tools:context=".AboutActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#707070"
+            android:fontFamily="casual"
+            android:text="@string/developer"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/developer_textView"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_below="@id/developer_textView"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="300dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_man"
+            android:id="@+id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#707070"
+            android:fontFamily="casual"
+            android:layout_below="@id/avatar"
+            android:id="@+id/tehleel_textView"
+            android:text="Tehleel Mir"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Contact :"
+            android:textSize="20sp"
+            android:textColor="#707070"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:id="@+id/contact"
+            android:layout_below="@id/tehleel_textView"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/message"
+            android:src="@drawable/ic_message"
+            android:layout_below="@id/contact"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/twitter"
+            android:src="@drawable/ic_twitter"
+            android:layout_below="@id/message"
+            android:layout_height="24dp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/instagram"
+            android:src="@drawable/ic_instagram"
+            android:layout_below="@id/twitter"
+            android:layout_height="24dp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/reddit"
+            android:src="@drawable/ic_reddit"
+            android:layout_below="@id/instagram"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#707070"
+            android:textColorLink="#707070"
+            android:text="@string/mail"
+            android:id="@+id/tv_mail"
+            android:layout_below="@id/contact"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/message"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#707070"
+            android:text="@string/twitter"
+            android:id="@+id/tv_twitter"
+            android:layout_below="@id/message"
+            android:layout_marginStart="10dp"
+            android:textColorLink="#707070"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/twitter"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#707070"
+            android:text="@string/insta"
+            android:layout_below="@id/twitter"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tv_insta"
+            android:textColorLink="#707070"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/instagram"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#707070"
+            android:text="@string/reddit"
+            android:id="@+id/tv_reddit"
+            android:layout_below="@id/instagram"
+            android:layout_marginStart="10dp"
+            android:textColorLink="#707070"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/reddit"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:textColorLink="#707070"
+            android:layout_marginTop="10dp"
+            android:textColor="#707070"
+            android:layout_width="wrap_content"
+            android:id="@+id/icon_tv_link"
+            android:text="@string/icon_link"
+            android:layout_below="@id/tv_reddit"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</ScrollView>

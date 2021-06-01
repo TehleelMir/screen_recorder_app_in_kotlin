@@ -22,7 +22,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/ic_closed_eye"
         app:cb_color="@color/mainButtonColor1"
         app:cb_pressedRingWidth="8dip" />
 
@@ -31,12 +31,11 @@
         android:layout_width="64dp"
         android:elevation="8dp"
         android:layout_height="64dp"
-        android:src="@drawable/ic_launcher_foreground"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        app:cb_color="#B71C1C"
+        app:cb_color="@color/mainButtonColor1"
         app:cb_pressedRingWidth="8dip" />
 
 
